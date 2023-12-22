@@ -14,7 +14,7 @@ async function main() {
   const browser = await playwright[browserType].launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
-
+//you can change the goto link to any other site you might want to test
   await page.goto('http://google.com');
   await page.waitForLoadState('load');
 
